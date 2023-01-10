@@ -1,10 +1,12 @@
-import { Fragment } from 'react';
+import { Fragment } from "react";
+import Header from "./components/Layout/Header";
 
 function App() {
   return (
-   <Fragment>
-   <h1>OscarWallshack</h1>
-   </Fragment>
+    <Fragment>
+      <Header />
+      <h1>OscarWallshacka</h1>
+    </Fragment>
   );
 }
 
