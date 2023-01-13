@@ -1,11 +1,12 @@
 import { Fragment } from "react";
 import Header from "./components/Layout/Header";
+import Hero from "./components/Layout/Hero";
 
 function App() {
   return (
     <Fragment>
       <Header />
-      <h1>OscarWallshacka</h1>
+      <Hero />
     </Fragment>
   );
 }
