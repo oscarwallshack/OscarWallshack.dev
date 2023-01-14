@@ -8,7 +8,7 @@ function App() {
       <Header />
       <Hero />
     </Fragment>
-  );
+  );        
 }
 
 export default App;
