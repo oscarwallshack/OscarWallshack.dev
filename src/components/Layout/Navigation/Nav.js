@@ -1,6 +1,6 @@
 import Hamburger from "./Hamburger/Hamburger";
 import NavLink from "./NavLinks";
-import classes from "./TopNavigation.module.css";
+import classes from "./Navigation.module.scss";
 
 const links = [
   {

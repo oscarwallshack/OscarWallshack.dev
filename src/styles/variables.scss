@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;700;900&display=swap');
+
+$poppins: "Poppins",
+sans-serif;
+
+$primary: rgba(23, 25, 27, 255);
+$secondary: rgb(45, 48, 51);
+$purple: rgba(101, 14, 163, 0.719);
+$pink: #923680;
+$pink_2: #af7099;
+
+/* Extra small devices (phones, 600px and down) */
+@mixin phone {
+    @media only screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin tablet {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@mixin desktop {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@mixin LargeDesktop {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}

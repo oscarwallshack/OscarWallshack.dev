@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./NavLinks.module.css";
+import classes from "./NavLinks.module.scss";
 
 const NavLink = (props) => {
   return (
