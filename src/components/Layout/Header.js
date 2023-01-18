@@ -1,14 +1,11 @@
 import React from 'react';
-import Hamburger from '../UI/Hamburger/Hamburger';
+import TopNavigation from './Navigation/TopNavigation';
 
 
 const Header = (props) => {
   return (
     <header >
-      <nav>
-      <a href="">abc</a>
-      <Hamburger />
-      </nav>
+    <TopNavigation />
     </header>
   );
 };

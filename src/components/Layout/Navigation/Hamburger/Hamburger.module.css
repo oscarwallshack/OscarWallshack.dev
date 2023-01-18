@@ -1,0 +1,5 @@
+.hamburger{
+    border: none;
+    flex-grow: 1; /* default 0 */
+    display: none;
+}
