@@ -26,6 +26,10 @@
                 text-decoration: none;
                 color: $white;
                 position: relative;
+
+                &:hover{
+                    color: $pink_2;
+                }
             }
         }
     }
