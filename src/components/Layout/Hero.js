@@ -8,8 +8,8 @@ const Hero = () => {
   return (
     <section className={classes.hero}>
       <div className={classes.hero__intro}>
-        <h1>OscarWallshacka</h1>
-        <p>Coś tam o mnie</p>
+        <h1>Frontend developer | SEO Specialist</h1>
+        <p>gic /p>
         <Button text="Contact me" />
       </div>
       <div className={classes.hero__projects}></div>
