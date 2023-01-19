@@ -4,12 +4,11 @@
     height: 90px;
     padding: 0 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    position: fixed;
     width: 100%;
     background: $primary;
-    // backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     z-index: 1000;
     transition: all 0.5s ease;
 
@@ -23,7 +22,7 @@
         }
 
         &__toggle {
-            color: #fff;
+            color: $white;
             position: relative;
             z-index: 10;
             cursor: pointer;
@@ -50,7 +49,7 @@
             max-width: 400px;
             height: 100vh;
             outline: 0;
-            background: black;
+            background: rgb(49, 48, 48);
             z-index: 9;
             transform: translateX(100vw);
             opacity: 0;

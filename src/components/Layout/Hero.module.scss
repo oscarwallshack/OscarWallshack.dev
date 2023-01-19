@@ -1,4 +1,6 @@
+@import '/src/styles/variables.scss';
 
 .hero {
-    height: 100Vh;
+    height: 200Vh;
+    background-color: $primary;
 }

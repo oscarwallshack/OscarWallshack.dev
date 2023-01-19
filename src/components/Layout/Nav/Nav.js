@@ -1,17 +1,14 @@
 import classes from "./Nav.module.scss";
 
-const Nav = ({ isMenu, menuToggle }) => {
+const Nav = ({ isMenu }) => {
   return (
-    <nav className={classes.nav}>
+    <nav className={isMenu ? classes.menu__nav : classes.nav}>
       <ul>
+      <li>
+        <a href="/about-me">About</a>
+      </li>
         <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="/about-me">About</a>
+          <a href="https://github.com/oscarwallshack">Github</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
