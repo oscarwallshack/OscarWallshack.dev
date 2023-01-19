@@ -9,30 +9,63 @@ $purple: rgba(101, 14, 163, 0.719);
 $pink: #923680;
 $pink_2: #af7099;
 
-/* Extra small devices (phones, 600px and down) */
-@mixin phone {
-    @media only screen and (max-width: 600px) {
-        @content;
-    }
-}
+// border-radius
+$borderRadius: 12px;
 
-/* Medium devices (landscape tablets, 768px and up) */
-@mixin tablet {
-    @media only screen and (min-width: 768px) {
-        @content;
-    }
-}
+// letter spacing
+$letterSpacing: 0.4px;
 
-/* Large devices (laptops/desktops, 992px and up) */
-@mixin desktop {
-    @media only screen and (min-width: 992px) {
-        @content;
-    }
-}
+// spacing
+$spacing-sm: 12px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 64px;
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@mixin LargeDesktop {
-    @media only screen and (min-width: 1200px) {
-        @content;
+// breakpoints
+@mixin breakpoint($point) {
+    @if $point==xl {
+
+        // 1120px
+        @media (min-width: 70em) {
+            @content;
+        }
+    }
+
+    @else if $point==lg {
+
+        // 1024px
+        @media (min-width: 64em) {
+            @content;
+        }
+    }
+
+    @else if $point==md {
+
+        // 768px
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+
+    @else if $point==md-only {
+
+        // 767px
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $point==sm {
+
+        // 600px
+        @media (min-width: 37.5em) {
+            @content;
+        }
+    }
+
+    @else if $point==sm-only {
+        @media (max-width: 599px) {
+            @content;
+        }
     }
 }

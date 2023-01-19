@@ -1,11 +1,18 @@
-import React from 'react';
-import TopNavigation from './Navigation/TopNavigation';
+import React, { useState } from "react";
+import Logo from "../UI/Logo/Logo";
 
+import { CgMenuRight, CgClose } from "react-icons/cg";
+import classes from "./Header.module.scss";
+import Nav from "./Nav/Nav";
 
-const Header = (props) => {
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  
   return (
-    <header >
-    <TopNavigation />
+    <header className={classes.header}>
+      <Logo />
+      <Nav />
     </header>
   );
 };
