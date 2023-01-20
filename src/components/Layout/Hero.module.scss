@@ -13,6 +13,24 @@
         width: 50%;
     }
 
+    img{
+        position: absolute;
+        width: 300px;
+        animation: moveUpDown 3s ease-in-out infinite;
+    }
+    
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
     &__intro {
         background: $white;
     }
@@ -20,4 +38,6 @@
     &__projects {
         background: $white;
     }
+
+
 }
