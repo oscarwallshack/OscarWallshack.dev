@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../UI/Button";
 import classes from "./Hero.module.scss";
 import astronautImage from "../../assets/astronautt.png";
-
+import autoDetailingImage from "../../assets/Auto-detailing-website.webp";
 
 const Hero = () => {
   return (
@@ -12,9 +12,21 @@ const Hero = () => {
         <p>Coś tam o mnie</p>
         <Button text="Contact me" />
       </div>
-      <img src={astronautImage} alt="astronaut" />
-      <div className={classes.hero__projects}></div>
-
+      <div className={classes.hero__projects}>
+        <div>
+          <img
+            src={autoDetailingImage}
+            alt="Auto Detailing website"
+            className={classes.projects}
+          />
+         
+        </div>
+      </div>
+      <img
+        src={astronautImage}
+        alt="astronaut"
+        className={classes.hero__astronaut}
+      />
     </section>
   );
 };

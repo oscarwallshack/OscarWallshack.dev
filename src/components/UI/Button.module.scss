@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.btn {
+    color: $white;
+    background: linear-gradient(38deg, #8563b5, #4d4e97);
+    border: 0.9px solid rgb(112, 112, 112);
+    border-radius: 2em;
+    margin: 0.5em;
+    padding: 1em;
+    font-size: 16px;
+    letter-spacing: $letterSpacing;
+
+    &:hover {
+        background: linear-gradient(38deg, #8563b5ab, #4d4e9775);
+        border: 0.9px solid rgb(112, 112, 112);
+        border-radius: 2em;
+        margin: 0.5em;
+        padding: 1em;
+        font-size: 16px;
+        color: #fff;
+    }
+}
