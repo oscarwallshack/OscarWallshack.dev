@@ -3,6 +3,8 @@ import Button from "../UI/Button";
 import classes from "./Hero.module.scss";
 import astronautImage from "../../assets/astronautt.png";
 import autoDetailingImage from "../../assets/Auto-detailing-website.webp";
+import test from "../../assets/test.png";
+
 
 const Hero = () => {
   return (
@@ -19,6 +21,11 @@ const Hero = () => {
         <div>
           <img
             src={autoDetailingImage}
+            alt="Auto Detailing website"
+            className={classes.projects}
+          />
+          <img
+            src={test}
             alt="Auto Detailing website"
             className={classes.projects}
           />

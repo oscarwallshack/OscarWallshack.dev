@@ -4,8 +4,9 @@
     height: 90px;
     padding: 0 1.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
     width: 100%;
     background: $primary;
     backdrop-filter: blur(5px);
@@ -14,6 +15,8 @@
 
     @include breakpoint(md) {
         padding: 0 3rem;
+    justify-content: space-around;
+
     }
 
     &__menu {
@@ -45,15 +48,13 @@
             bottom: 0px;
             right: 0px;
             padding: 3rem;
-            width: 70vw;
-            max-width: 400px;
-            height: 100vh;
+            width: 30vw;
+            height: 50vh;
             outline: 0;
-            background: rgb(49, 48, 48);
             z-index: 9;
-            transform: translateX(100vw);
             opacity: 0;
             transition: all 0.3s ease;
+            background-color: rgba(83, 83, 83, 0.3);
         }
 
         .show {
