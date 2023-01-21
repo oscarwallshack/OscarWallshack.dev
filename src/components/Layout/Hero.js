@@ -8,8 +8,11 @@ const Hero = () => {
   return (
     <section className={classes.hero}>
       <div className={classes.hero__intro}>
-        <h1>Frontend developer | SEO Specialist</h1>
-        <p>Coś tam o mnie</p>
+        <h2>Hello world!</h2>
+        <p>I'm Bartek, </p>
+        <h1>
+          <span>Frontend</span> developer & <span>SEO</span> Specialist
+        </h1>
         <Button text="Contact me" />
       </div>
       <div className={classes.hero__projects}>
@@ -19,7 +22,6 @@ const Hero = () => {
             alt="Auto Detailing website"
             className={classes.projects}
           />
-         
         </div>
       </div>
       <img
