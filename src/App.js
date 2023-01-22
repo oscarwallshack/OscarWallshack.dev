@@ -1,6 +1,6 @@
 import { Fragment } from "react";
-import Header from "./components/Layout/Header";
-import Hero from "./components/Layout/Hero";
+import Header from "./components/Layout/Header/Header";
+import Hero from "./components/Layout/Hero/Hero";
 
 function App() {
   return (
