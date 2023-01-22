@@ -1,0 +1,65 @@
+@import '/src/styles/variables.scss';
+
+.header {
+    height: 90px;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background: $primary;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    transition: all 0.5s ease;
+
+    @include breakpoint(md) {
+        padding: 0 3rem;
+    justify-content: space-around;
+
+    }
+
+    &__menu {
+        @include breakpoint(md) {
+            display: none;
+        }
+
+        &__toggle {
+            color: $white;
+            position: relative;
+            z-index: 10;
+            cursor: pointer;
+
+            svg {
+                font-size: 2rem;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            padding: 3rem;
+            width: 30vw;
+            height: 50vh;
+            outline: 0;
+            z-index: 9;
+            opacity: 0;
+            transition: all 0.3s ease;
+            background-color: rgba(83, 83, 83, 0.3);
+        }
+
+        .show {
+            transform: translateX(0vw);
+            opacity: 1;
+        }
+    }
+}
