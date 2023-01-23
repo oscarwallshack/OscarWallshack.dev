@@ -43,7 +43,7 @@
             color: $white;
 
             span {
-                background-image: url("../../../assets/bckr.webp");
+                background-image: $pink_background;
                 -webkit-text-stroke: 0.1px rgb(122, 122, 122);
                 -webkit-background-clip: text;
                 -moz-backface-clip: text;
@@ -91,10 +91,6 @@
                 z-index: -1;
                 left: 100px;
                 bottom: 100px;
-            }
-
-            img::after {
-                background-color: aqua;
             }
         }
     }
