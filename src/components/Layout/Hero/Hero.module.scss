@@ -95,12 +95,12 @@
         }
     }
 
-    &__astronaut {
+    &__donut {
         position: absolute;
-        width: 300px;
+        width: 450px;
         animation: moveUpDown 4s ease-in-out infinite;
         z-index: 1;
-        left: 280px;
+        left: 340px;
         mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.95) 100%);
 
         @keyframes moveUpDown {

@@ -1,2 +1,16 @@
 @import '/src/styles/variables.scss';
 
+.project {
+    width: 400px;
+    background: grey;
+    border-radius: $borderRadius;
+    color: $white;
+
+    &__heading {
+        h4 {
+            font-size: $headingH3;
+        }
+    }
+
+    &__content {}
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../UI/Button";
 import classes from "./Hero.module.scss";
-import astronautImage from "../../../assets/astronautt.png";
+import donutImage from "../../../assets/donut.png";
 import autoDetailingImage from "../../../assets/Auto-detailing-website.webp";
 import test from "../../../assets/test.png";
 import HeroBackground from "./HeroBackground";
@@ -35,9 +35,9 @@ const Hero = () => {
           </div>
         </div>
         <img
-          src={astronautImage}
-          alt="astronaut"
-          className={classes.hero__astronaut}
+          src={donutImage}
+          alt="donut in space"
+          className={classes.hero__donut}
         />
       </section>
     </Fragment>
