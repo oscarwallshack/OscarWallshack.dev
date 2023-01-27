@@ -1,16 +1,54 @@
 @import '/src/styles/variables.scss';
 
 .project {
-    width: 400px;
-    background: grey;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    width: 380px;
+    height: 500px;
+    padding: 1em;
+    text-align: center;
+    background: #1e2b3e;
     border-radius: $borderRadius;
     color: $white;
 
     &__heading {
+        margin: 10px 0;
+
         h4 {
             font-size: $headingH3;
+            margin: 10px 0;
+
+        }
+
+        p {
+            font-size: 1.2em;
+            text-align: left;
+            color: #cecece;
         }
     }
 
-    &__content {}
+    &__content {
+        display: grid;
+        align-content: space-around;
+
+
+        position: relative;
+        height: 100%;
+
+        a {
+            width: 150px;
+            color: $white;
+            background: none;
+            border: 1px solid;
+            border-radius: 2em;
+            padding: 1em;
+            letter-spacing: $letterSpacing;
+            transition: 0.2s;
+
+            &:hover {
+                background: #9e9e9e1e;
+                color: $white;
+            }
+        }
+    }
 }

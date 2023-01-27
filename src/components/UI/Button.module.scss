@@ -4,13 +4,17 @@
     color: $white;
     background: linear-gradient(38deg, $pink, $pink_2);
     border: none;
+    background: $pink;
+
     border-radius: 2em;
     margin: 0.5em;
     padding: 1.5em;
     font-size: 1.1em;
     letter-spacing: $letterSpacing;
+    transition: 0.2s;
 
     &:hover {
-        background: linear-gradient(38deg, $purple, $pink);
+        background: $pink_2;
+        box-shadow: 0 0 30px $purple;
     }
 }

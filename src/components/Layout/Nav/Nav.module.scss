@@ -26,14 +26,9 @@
                 align-items: center;
                 height: 100%;
                 font-size: 1.1rem;
-                letter-spacing: $letterSpacing;
-                text-decoration: none;
-                color: $white;
                 position: relative;
 
-                &:hover {
-                    color: $pink_2;
-                }
+              
             }
         }
     }

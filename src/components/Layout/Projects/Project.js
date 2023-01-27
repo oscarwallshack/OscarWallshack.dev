@@ -1,22 +1,24 @@
 import React from "react";
 import classes from "./Project.module.scss";
+import Tech from "./Tech";
 
 const Project = (props) => {
   return (
     <div className={classes.project}>
       <div className={classes.project__heading}>
-        <h4>Project taki i taki</h4>
+        <h4>DevJobler</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
+          suscipit ex.
+        </p>
       </div>
       <div className={classes.project__content}>
         <div>
-          <ul>
-            <li>React</li>
-            <li>JS</li>
-            <li>REDUX</li>
-            <li>React</li>
-          </ul>
+          <Tech />
         </div>
-        <a href="#"></a>
+        <div>
+          <a href="#">Check out</a>
+        </div>
       </div>
     </div>
   );

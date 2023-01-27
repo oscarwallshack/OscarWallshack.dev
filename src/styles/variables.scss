@@ -34,6 +34,18 @@ $headingH1: 3.5em;
 $headingH2: 2.3em;
 $headingH3: 1.5em;
 
+$paragraph: 1.05em;
+
+a {
+    color: $white;
+    letter-spacing: $letterSpacing;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $pink_2;
+}
+
 // breakpoints
 @mixin breakpoint($point) {
     @if $point==xl {

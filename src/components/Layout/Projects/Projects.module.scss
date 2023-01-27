@@ -2,17 +2,37 @@
 
 .projects {
     display: grid;
+    grid-template-rows: 1fr 1fr;
     justify-items: center;
-    justify-content: center;
     width: 100%;
-    height: 90vh;
-    background: $primary;
-
+    background: #121a26;
+    
     &__header {
+        margin: 100px 0 50px 0;        
+        color: $white;
+        text-align: center;
+
         h2 {
-            color: $white;
-             font-size: $headingH1;
+            font-size: $headingH1;
             letter-spacing: $letterSpacing;
+            margin-bottom: 0.2em;
         }
+
+        a {
+            color: $pink_2;
+        }
+
+        a:hover {
+            color: $white
+        }
+    }
+
+    &__boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10%;
+        align-items: center;
+        justify-content: center;
+
     }
 }
