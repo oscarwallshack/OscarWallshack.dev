@@ -3,11 +3,11 @@
 
 .logo {
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: $headingH3;
     color: $white;
     letter-spacing: $letterSpacing;
 
-    &:hover{
+    &:hover {
         color: $pink_2;
     }
 }
