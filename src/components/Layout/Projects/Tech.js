@@ -1,10 +1,6 @@
 import classes from "./Tech.module.scss";
 const Tech = ({ tech }) => {
-  return (
-    <ul className={classes.tech}>
-      <li>{tech}</li>
-    </ul>
-  );
+  return <li className={classes.tech}>{tech}</li>;
 };
 
 export default Tech;

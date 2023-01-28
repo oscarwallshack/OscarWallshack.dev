@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "./Project";
+import ProjectItem from "./ProjectItem";
 import classes from "./Projects.module.scss";
 
 const Projects = () => {
@@ -28,8 +28,8 @@ const Projects = () => {
   ];
 
   const projectList = projects.map((project) => (
-    <Project
-      key={project.id}
+    <ProjectItem
+      id={project.id}
       projectName={project.name}
       projectDescription={project.description}
       projectTechs={project.tech}

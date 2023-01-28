@@ -1,11 +1,11 @@
 import React from "react";
+import Logo from "../../UI/Logo/Logo";
 import classes from "./Footer.module.scss";
 
 const Footer = () => {
   return (
     <footer className={classes.footer}>
-      <h2>OscarWallshack</h2>
-
+      <Logo />
       <div>
         <a target="_blank" href="https://github.com/oscarwallshack">
           GitHub

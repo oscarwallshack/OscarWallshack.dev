@@ -1,23 +1,27 @@
 import React from "react";
-import classes from "./Project.module.scss";
+import classes from "./ProjectItem.module.scss";
 import Tech from "./Tech";
 
-const Project = ({
-  key,
+const ProjectItem = ({
+  id,
   projectName,
   projectDescription,
   projectTechs,
   projectLink,
 }) => {
-  const tech = projectTechs.map((tech) => <Tech tech={tech} />);
+  const tech = projectTechs.map((tech) => (
+    <Tech tech={tech} />
+  ));
   return (
-    <div id={key} className={classes.project}>
+    <div key={id} className={classes.project}>
       <div className={classes.project__heading}>
         <h4>{projectName}</h4>
         <p>{projectDescription}</p>
       </div>
       <div className={classes.project__content}>
-        <div><ul className={classes.project__content__techList}>{tech}</ul></div>
+        <div>
+          <ul className={classes.project__content__techList}>{tech}</ul>
+        </div>
         <div>
           <a href={projectLink}>Check out</a>
         </div>
@@ -26,4 +30,4 @@ const Project = ({
   );
 };
 
-export default Project;
+export default ProjectItem;
