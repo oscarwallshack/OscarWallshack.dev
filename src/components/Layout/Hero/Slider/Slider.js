@@ -34,7 +34,7 @@ const Slider = () => {
 
   const slider = () => {
     setTimeout(() => {
-      setFrontImageIndex((frontImageIndex + 1) % slides.length);
+      setFrontImageIndex((frontImageIndex - 1 + slides.length) % slides.length);
       setBackImageIndex(frontImageIndex);
     }, 3000);
   };
@@ -48,7 +48,7 @@ const Slider = () => {
       key={slides[backImageIndex].id}
       src={slides[backImageIndex].url}
       alt={slides[backImageIndex].title}
-      className={classes.frontImage}
+      className={`${classes.frontImage} ${frontImageIndex === frontImageIndex ? classes.active : ""}`}
     />
   );
   const backImage = (
@@ -56,7 +56,7 @@ const Slider = () => {
       key={slides[frontImageIndex].id}
       src={slides[frontImageIndex].url}
       alt={slides[frontImageIndex].title}
-      className={classes.backImage}
+      className={`${classes.backImage} ${backImageIndex === frontImageIndex ? "" : classes.active}`}
     />
   );
 
