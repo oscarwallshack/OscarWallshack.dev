@@ -47,5 +47,9 @@
                 color: $white;
             }
         }
+        &__techList{
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }

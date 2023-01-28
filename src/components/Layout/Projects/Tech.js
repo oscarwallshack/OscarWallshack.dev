@@ -1,10 +1,8 @@
 import classes from "./Tech.module.scss";
-const Tech = () => {
+const Tech = ({ tech }) => {
   return (
     <ul className={classes.tech}>
-      <li>PHP</li>
-      <li>Laravel 8</li>
-      <li>Bootstrap 5</li>
+      <li>{tech}</li>
     </ul>
   );
 };

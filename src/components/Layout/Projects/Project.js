@@ -2,22 +2,24 @@ import React from "react";
 import classes from "./Project.module.scss";
 import Tech from "./Tech";
 
-const Project = (props) => {
+const Project = ({
+  key,
+  projectName,
+  projectDescription,
+  projectTechs,
+  projectLink,
+}) => {
+  const tech = projectTechs.map((tech) => <Tech tech={tech} />);
   return (
-    <div className={classes.project}>
+    <div id={key} className={classes.project}>
       <div className={classes.project__heading}>
-        <h4>DevJobler</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
-          suscipit ex.
-        </p>
+        <h4>{projectName}</h4>
+        <p>{projectDescription}</p>
       </div>
       <div className={classes.project__content}>
+        <div><ul className={classes.project__content__techList}>{tech}</ul></div>
         <div>
-          <Tech />
-        </div>
-        <div>
-          <a href="#">Check out</a>
+          <a href={projectLink}>Check out</a>
         </div>
       </div>
     </div>

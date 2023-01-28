@@ -1,9 +1,7 @@
 @import '/src/styles/variables.scss';
 
-.tech{
-    display: flex;
-    flex-wrap: wrap;
-    li{
+.tech {
+    li {
         color: $white;
         background: linear-gradient(38deg, $pink, $pink_2);
         border: none;
