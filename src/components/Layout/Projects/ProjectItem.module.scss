@@ -12,10 +12,11 @@
     color: $white;
     transition-property: transform;
     transition-duration: 0.5s;
-    
-    &:hover{
+
+    &:hover {
         transform: scale(1.02);
     }
+
     &__heading {
         margin: 10px 0;
 
@@ -27,7 +28,7 @@
         p {
             font-size: 1.2em;
             text-align: left;
-            color: #cecece;
+            color: $grey;
         }
     }
 
@@ -52,7 +53,8 @@
                 color: $white;
             }
         }
-        &__techList{
+
+        &__techList {
             display: flex;
             flex-wrap: wrap;
         }

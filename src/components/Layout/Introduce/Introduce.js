@@ -15,12 +15,14 @@ const Introduce = () => {
 
   const seoSkills = [
     "Website analysis",
+    "Keyword research",
     "Page optimization",
     "Preparing reports",
     "Google Search Console",
     "Google Analytics 4",
     "Google Tag Manager",
-    "Google Data Studio / Looker Studio",
+    "Google Data Studio",
+    "Looker Studio",
     "Ahrefs",
     "Semstorm",
   ];
@@ -46,20 +48,23 @@ const Introduce = () => {
         <h3>About Me</h3>
         <div className={classes.prof}></div>
         <p>
-        Currently, I work as an SEO Specialist, I help clients achieve better and better search results for their websites.
-        
-        I associate my future with programming. For the beginning of his career in this
-        I chose the path of Frontend Developer. I want to create nice, useful and
-        optimized systems and applications.
+          My name is Bartek and I am currently working as an{" "}
+          <span>SEO specialist</span>. I help clients achieve their business
+          goals by optimizing their websites for the Google search engine
+        </p>
+        <p>
+          After hours I learn programming to become a{" "}
+          <span>Frontend Developer</span>. I want to create nice looking
+          websites and web applications.
         </p>
       </div>
       <div className={classes.introduce__skills}>
         <span>
-          <h3>Coding Skills</h3>
+          <h3>Coding Skills {`</>`}</h3>
           <ul>{codingList}</ul>
         </span>
         <span>
-          <h3>SEO Skills</h3>
+          <h3>SEO Skills & Tools</h3>
           <ul>{seoList}</ul>
         </span>
         <span>
