@@ -9,11 +9,12 @@ const ProjectItem = ({
   projectTechs,
   projectLink,
 }) => {
-  const tech = projectTechs.map((tech) => (
-    <Tech tech={tech} />
+  const tech = projectTechs.map((tech, index) => (
+    <Tech key={index} tech={tech} />
   ));
+
   return (
-    <div key={id} className={classes.project}>
+    <div className={classes.project}>
       <div className={classes.project__heading}>
         <h4>{projectName}</h4>
         <p>{projectDescription}</p>

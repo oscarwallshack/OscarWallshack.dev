@@ -29,13 +29,17 @@ const Projects = () => {
 
   const projectList = projects.map((project) => (
     <ProjectItem
-      id={project.id}
+      key={project.id}
       projectName={project.name}
       projectDescription={project.description}
       projectTechs={project.tech}
       projectLink={project.link}
     />
   ));
+
+  // projects.map((project, index) => {
+  //   console.log(project.id);
+  // });
 
   return (
     <section className={classes.projects}>

@@ -10,7 +10,12 @@
     background: rgb(23, 33, 48);
     border-radius: $borderRadius;
     color: $white;
-
+    transition-property: transform;
+    transition-duration: 0.5s;
+    
+    &:hover{
+        transform: scale(1.02);
+    }
     &__heading {
         margin: 10px 0;
 
