@@ -1,0 +1,64 @@
+@import '../../../styles/variables.scss';
+
+.introduce {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    padding-top: 100px;
+    background-image: linear-gradient(to bottom, #000 0%, $primary 100%);
+
+    div {
+        background: rgb(23, 33, 48);
+        border-radius: $borderRadius;
+        width: auto;
+        margin: 0 10px;
+        padding: 30px;
+    }
+
+    &__aboutMe {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        color: $white;
+
+        h3 {
+            font-size: $headingH3;
+            letter-spacing: $letterSpacing;
+        }
+
+        p {
+            color: $white;
+        }
+
+        .prof {
+            width: 15em;
+            height: 15em;
+            border-radius: 50%;
+            background-image: $prof;
+            background-size: cover;
+            //  no-repeat left center / cover;
+
+        }
+    }
+
+    &__skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+        justify-items: center;
+        gap: 20px;
+        color: $white;
+
+        h3 {
+            font-size: $headingH3;
+            margin-bottom: 20px;
+            letter-spacing: $letterSpacing;
+
+        }
+
+        li {
+            padding: 5px;
+        }
+    }
+}
