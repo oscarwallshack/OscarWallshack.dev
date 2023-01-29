@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import AboutMe from "./components/Layout/Introduce/Introduce";
 import Footer from "./components/Layout/Footer/Footer";
 import Header from "./components/Layout/Header/Header";
 import Hero from "./components/Layout/Hero/Hero";
@@ -9,6 +10,7 @@ function App() {
     <Fragment>
       <Header />
       <Hero />
+      <AboutMe />
       <Projects />
       <Footer />
     </Fragment>
