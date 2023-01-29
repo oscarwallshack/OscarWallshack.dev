@@ -7,7 +7,6 @@
         overflow: hidden;
         width: 100%;
         z-index: 1000;
-        transition: transform 1s ease-in-out;
 
         img {
             width: 400px;
@@ -19,29 +18,11 @@
             -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.95) 20%);
         }
 
-        img.frontImage {
-            transition: all 2s ease-in-out;
-            opacity: 1;
-        }
-
-        img.frontImage.active {
-            opacity: 0;
-        }
-
         img.backImage {
-            width: 400px;
-            object-fit: cover;
             position: absolute;
             z-index: -1;
             left: 70px;
             top: 60px;
-            transition: all 2s ease-in-out;
-            opacity: 0;
         }
-
-        img.backImage.active {
-            opacity: 1;
-        }
-
     }
 }

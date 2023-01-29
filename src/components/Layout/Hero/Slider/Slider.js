@@ -22,12 +22,12 @@ const Slider = () => {
     },
     {
       id: 3,
-      url: imageAutoDet1,
+      url: imageAutoDet2,
       title: "autodetailing",
     },
     {
       id: 4,
-      url: imageAutoDet2,
+      url: imageAutoDet1,
       title: "autodetailing1",
     },
   ];
@@ -36,7 +36,7 @@ const Slider = () => {
     setTimeout(() => {
       setFrontImageIndex((frontImageIndex - 1 + slides.length) % slides.length);
       setBackImageIndex(frontImageIndex);
-    }, 3000);
+    }, 5000);
   };
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const Slider = () => {
       key={slides[backImageIndex].id}
       src={slides[backImageIndex].url}
       alt={slides[backImageIndex].title}
-      className={`${classes.frontImage} ${frontImageIndex === frontImageIndex ? classes.active : ""}`}
+      className={classes.frontImage}
     />
   );
   const backImage = (
@@ -56,7 +56,7 @@ const Slider = () => {
       key={slides[frontImageIndex].id}
       src={slides[frontImageIndex].url}
       alt={slides[frontImageIndex].title}
-      className={`${classes.backImage} ${backImageIndex === frontImageIndex ? "" : classes.active}`}
+      className={classes.backImage}
     />
   );
 
