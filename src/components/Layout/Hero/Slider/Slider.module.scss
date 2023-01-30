@@ -21,6 +21,10 @@
             &:hover {
                 transform: scale(1.02);
             }
+        @include breakpoint(sm) {
+            width: 250px;
+            height: 250px;
+        }
         }
 
         img.backImage {

@@ -52,49 +52,43 @@ a:hover {
 }
 
 // breakpoints
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
 @mixin breakpoint($point) {
     @if $point==xl {
 
-        // 1120px
-        @media (min-width: 70em) {
+        @media (min-width: $screen-xl-min) {
             @content;
         }
     }
 
     @else if $point==lg {
 
-        // 1024px
-        @media (min-width: 64em) {
+        @media (min-width: $screen-lg-min) {
             @content;
         }
     }
 
     @else if $point==md {
 
-        // 768px
-        @media (min-width: 48em) {
-            @content;
-        }
-    }
-
-    @else if $point==md-only {
-
-        // 767px
-        @media (max-width: 767px) {
+        @media (min-width: $screen-md-min) {
             @content;
         }
     }
 
     @else if $point==sm {
-
-        // 600px
-        @media (min-width: 37.5em) {
-            @content;
-        }
-    }
-
-    @else if $point==sm-only {
-        @media (max-width: 599px) {
+        @media (max-width: $screen-sm-min) {
             @content;
         }
     }

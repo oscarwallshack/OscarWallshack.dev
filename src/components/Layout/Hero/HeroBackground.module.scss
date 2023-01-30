@@ -1,3 +1,4 @@
+@import '/src/styles/variables.scss';
 
 @keyframes slide-transparency {
     0% {
@@ -48,6 +49,11 @@
     background: #000;
     z-index: -1000;
     overflow: hidden;
+
+    @include breakpoint(sm) {
+      height: 180vh;
+
+    }
     
     
     }

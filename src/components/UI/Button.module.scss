@@ -17,4 +17,12 @@
         background: $pink_2;
         box-shadow: 0 0 30px $purple;
     }
+
+    @include breakpoint(md) {
+        font-size: 1em;
+    }
+
+    @include breakpoint(sm) {
+        font-size: 14px;
+    }
 }

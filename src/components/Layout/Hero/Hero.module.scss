@@ -1,22 +1,24 @@
 @import '/src/styles/variables.scss';
 
 .hero {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: flex-end;
     padding: 0 100px;
     min-height: 90vh;
     // background-color: $primary;
 
-    @include breakpoint(md) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        align-items: center;
+    @include breakpoint(md) {}
+
+    @include breakpoint(sm) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: flex-end;
+        padding: 0;
     }
 
     div {
@@ -36,7 +38,7 @@
 
         h1 {
             text-align: center;
-            font-size: $headingH2;
+            font-size: $headingH1;
             letter-spacing: $letterSpacing;
             color: $white;
 
@@ -50,9 +52,12 @@
                 font-weight: bold;
             }
 
-            @include breakpoint(lg) {
-            font-size: $headingH1;
+            @include breakpoint(md) {
+                font-size: $headingH2;
+            }
 
+            @include breakpoint(sm) {
+                font-size: $headingH3;
             }
 
         }
@@ -62,6 +67,14 @@
             text-align: center;
             font-size: $headingH2;
             letter-spacing: $letterSpacing;
+
+            @include breakpoint(md) {
+                font-size: $headingH2;
+            }
+
+            @include breakpoint(sm) {
+                font-size: $headingH3;
+            }
         }
 
         p {
@@ -79,6 +92,19 @@
         z-index: 1;
         left: 340px;
         mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.95) 100%);
+
+
+        @include breakpoint(md) {
+            width: 350px;
+
+        }
+
+        @include breakpoint(sm) {
+            width: 250px;
+            left: 120px;
+            top: 10px;
+
+        }
 
         @keyframes moveUpDown {
             0% {

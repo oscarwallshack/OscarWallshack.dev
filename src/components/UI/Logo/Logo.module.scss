@@ -10,4 +10,12 @@
     &:hover {
         color: $pink_2;
     }
+
+    @include breakpoint(md) {
+        font-size: 1em;
+    }
+
+    @include breakpoint(sm) {
+        font-size: 16px;
+    }
 }
