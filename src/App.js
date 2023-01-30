@@ -10,8 +10,8 @@ function App() {
     <Fragment>
       <Header />
       <Hero />
-      <AboutMe />
       <Projects />
+      <AboutMe />
       <Footer />
     </Fragment>
   );        
