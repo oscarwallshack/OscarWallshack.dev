@@ -4,7 +4,7 @@
     height: 90px;
     padding: 0 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     width: 100%;
@@ -12,15 +12,17 @@
     z-index: 1000;
     transition: all 0.5s ease;
 
-    @include breakpoint(md) {
+    @include breakpoint(sm) {
         padding: 0 3rem;
-        justify-content: space-around;
+        justify-content: space-between;
 
     }
 
     &__menu {
-        @include breakpoint(md) {
-            display: none;
+        display: none;
+
+        @include breakpoint(sm) {
+            display: block;
         }
 
         &__toggle {
