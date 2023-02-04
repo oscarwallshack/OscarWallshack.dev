@@ -2,26 +2,19 @@
 
 .introduce {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 100%;
+    justify-items: center;
+    gap: 20px;
+    width: auto;
     padding: 150px 0;
     background: $primary;
     // background-image: linear-gradient(to bottom, #000 0%, $primary 100%);
 
-    div {
-        margin: 0 10px;
-        padding: 30px;
-    }
 
     &__aboutMe {
         background: rgb(23, 33, 48);
         border-radius: $borderRadius;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 20px;
         color: $white;
-
+        padding: 30px;
 
         h3 {
             font-size: $headingH4;
@@ -29,22 +22,29 @@
             margin-bottom: 20px;
         }
 
-        p {
-            font-size: 1.1em;
-            text-align: left;
-            color: $grey;
+        .description {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
 
-            span {
-                color: $pink_2
+            .prof {
+                width: 10em;
+                height: 10em;
+                border-radius: 50%;
+                background-image: $prof;
+                background-size: cover;
             }
-        }
 
-        .prof {
-            width: 10em;
-            height: 10em;
-            border-radius: 50%;
-            background-image: $prof;
-            background-size: cover;
+
+            p {
+                font-size: 1.1em;
+                text-align: left;
+                color: $grey;
+
+                span {
+                    color: $pink_2
+                }
+            }
+
         }
     }
 
@@ -63,7 +63,7 @@
         span {
             height: 100%;
             width: 100%;
-            padding: 10px;
+            padding: 30px;
             border-radius: $borderRadius;
         }
 
@@ -81,7 +81,8 @@
         span:nth-child(3) {
             background: rgba(204, 13, 102, 0.57);
             grid-area: cms;
-            ul{
+
+            ul {
                 display: flex;
                 justify-content: center;
             }

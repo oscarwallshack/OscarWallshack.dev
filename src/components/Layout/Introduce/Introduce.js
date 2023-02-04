@@ -46,18 +46,21 @@ const Introduce = () => {
     <section className={classes.introduce}>
       <div className={classes.introduce__aboutMe}>
         <h3>About Me</h3>
-        <div className={classes.prof}></div>
-        <p>
-          My name is Bartek and I am currently working as an{" "}
-          <span>SEO specialist</span>. I help clients achieve their business
-          goals by optimizing their websites for the Google search engine
-        </p>
-        <p>
-          After hours I learn programming to become a{" "}
-          <span>Frontend Developer</span>. I want to create nice looking
-          websites and web applications.
-        </p>
+        <div className={classes.description}>
+          <div className={classes.prof}></div>
+          <div>
+            <p>
+              My name is Bartek and I am currently working as an
+              <span>SEO specialist</span>. I help clients achieve their business
+              goals by optimizing their websites for the Google search engine
+              After hours I learn programming to become a
+              <span>Frontend Developer</span>. I want to create nice looking
+              websites and web applications.
+            </p>
+          </div>
+        </div>
       </div>
+
       <div className={classes.introduce__skills}>
         <span>
           <h3>Coding Skills {`</>`}</h3>

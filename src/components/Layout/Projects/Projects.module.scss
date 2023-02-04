@@ -9,7 +9,13 @@
     padding: 150px 0;
     background-image: linear-gradient(to bottom, #000 0%, $primary 100%);
 
+    @include breakpoint(md) {
+        height: 130vh;
+    }
 
+    @include breakpoint(sm) {
+        height: 170vh;
+    }
 
     &__header {
         margin: 100px 0 50px 0;
