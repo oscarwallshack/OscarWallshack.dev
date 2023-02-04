@@ -10,7 +10,7 @@ function App() {
     <Fragment>
       <Header />
       <Hero />
-     
+      <Projects />
     </Fragment>
   );        
 }

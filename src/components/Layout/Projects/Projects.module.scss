@@ -9,7 +9,7 @@
     padding: 150px 0;
     background-image: linear-gradient(to bottom, #000 0%, $primary 100%);
 
-   
+
 
     &__header {
         margin: 100px 0 50px 0;
@@ -38,9 +38,18 @@
     &__boxes {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 10%;
         align-items: center;
         justify-content: center;
+        justify-items: center;
 
+        @include breakpoint(md) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @include breakpoint(sm) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }

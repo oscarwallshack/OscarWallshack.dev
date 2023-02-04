@@ -5,6 +5,7 @@
     grid-template-rows: 1fr 2fr;
     width: 380px;
     height: 500px;
+    margin: 1em;
     padding: 1em;
     text-align: center;
     background: rgb(23, 33, 48);
@@ -12,6 +13,21 @@
     color: $white;
     transition-property: transform;
     transition-duration: 0.5s;
+
+    @include breakpoint(lg) {
+        width: 300px;
+        height: 450px;
+    }
+
+    @include breakpoint(md) {
+        width: 350px;
+        height: 400px;
+    }
+
+    @include breakpoint(sm) {
+        width: 380px;
+        height: 390px;
+    }
 
     &:hover {
         transform: scale(1.02);
