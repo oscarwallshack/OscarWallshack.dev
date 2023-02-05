@@ -12,17 +12,19 @@
         width: 1000px;
 
         @include breakpoint(lg) {
-        width: 800px;
+            width: 800px;
 
         }
 
         @include breakpoint(md) {
-        width: 700px;
+            width: 700px;
 
         }
 
         @include breakpoint(sm) {
-        width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
 
         }
     }
@@ -47,12 +49,18 @@
             align-items: center;
             gap: 20px;
 
+            @include breakpoint(sm) {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+
             .prof {
                 width: 10em;
                 height: 10em;
                 border-radius: 50%;
                 background-image: $prof;
                 background-size: cover;
+
             }
 
 
@@ -82,27 +90,40 @@
             "coding seo"
             "cms cms ";
 
-        span {
-            height: 100%;
-            width: 100%;
-            padding: 30px;
-            border-radius: $borderRadius;
+            
+            span {
+                height: 100%;
+                width: 100%;
+                padding: 30px;
+                border-radius: $borderRadius;
+                
         }
 
         span:first-child {
             background: rgba(101, 14, 163, 0.57);
             grid-area: coding;
+            @include breakpoint(sm) {
+                height: auto;
+
+            }
         }
 
         span:nth-child(2) {
             background: rgba(146, 54, 128, 0.57);
             grid-area: seo;
+            @include breakpoint(sm) {
+                height: auto;
 
+            }
         }
 
         span:nth-child(3) {
             background: rgba(204, 13, 102, 0.57);
             grid-area: cms;
+
+            @include breakpoint(sm) {
+                height: auto;
+            }
 
             ul {
                 display: flex;

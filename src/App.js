@@ -6,11 +6,14 @@ import Hero from "./components/Layout/Hero/Hero";
 import Projects from "./components/Layout/Projects/Projects";
 
 function App() {
+
+
   return (
     <Fragment>
       <Header />
       <Hero />
       <Projects />
+      <AboutMe />
     </Fragment>
   );        
 }
