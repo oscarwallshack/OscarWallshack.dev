@@ -1,96 +1,110 @@
 @import '/src/styles/variables.scss';
 
 @keyframes slide-transparency {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  0% {
+    opacity: 0;
   }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 
 .animate__opacity {
-    animation-name: slide-transparency;
-    animation-iteration-count: infinite;
-    &.freq__5 {
+  animation-name: slide-transparency;
+  animation-iteration-count: infinite;
+
+  &.freq__5 {
     animation-duration: 5s;
-    }
-    &.freq__6 {
+  }
+
+  &.freq__6 {
     animation-duration: 6.33s;
-    }
-    &.freq__7 {
+  }
+
+  &.freq__7 {
     animation-duration: 7s;
-    }
-    &.freq__8 {
+  }
+
+  &.freq__8 {
     animation-duration: 8.88s;
-    }
-    &.freq__9 {
+  }
+
+  &.freq__9 {
     animation-duration: 9s;
-    }
-    &.freq__10 {
+  }
+
+  &.freq__10 {
     animation-duration: 10.17s;
-    }
-    &.delay__2 {
+  }
+
+  &.delay__2 {
     animation-delay: 1.33s;
-    }
-    &.delay__4 {
+  }
+
+  &.delay__4 {
     animation-delay: 2.11s;
-    }
-    }
-    .bg {
-    width: 100%;
-    height: 110vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #000;
-    z-index: -1000;
-    overflow: hidden;
+  }
+}
 
-    @include breakpoint(md) {
-      height: 180vh;
-    
-    }
+.bg {
+  width: 100%;
+  height: 110vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: -1000;
+  overflow: hidden;
 
-    @include breakpoint(sm) {
-      height: 180vh;
-    }
-    
-    
-    }
-    .z__1,
-    .z__2,
-    .z__3 {
-    position: absolute;
-    width: 150vw;
-    height: 150vw;
-    left: -50vw;
-    top: -50vw;
-    transform-origin: center;
-    }
-    .tile {
-    overflow: hidden;
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: repeat;
-    background-size: 512px 512px;
-    }
-  .topleft {
-    background: url("../../../assets/starrySky/topleft.png");
+  @include breakpoint(md) {
+    height: 180vh;
   }
-  .top__right {
-    background: url("../../../assets/starrySky/topright.png");
+
+  @include breakpoint(sm) {
+    height: 200vh;
   }
-  .bottom__left {
-    background: url("../../../assets/starrySky/bottomleft.png");
-  }
-  .bottom__right {
-    background: url("../../../assets/starrySky/bottomright.png");
-  }
+}
+
+.z__1,
+.z__2,
+.z__3 {
+  position: absolute;
+  width: 150vw;
+  height: 150vw;
+  left: -50vw;
+  top: -50vw;
+  transform-origin: center;
+}
+
+.tile {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-size: 512px 512px;
+}
+
+.topleft {
+  background: url("../../../assets/starrySky/topleft.png");
+}
+
+.top__right {
+  background: url("../../../assets/starrySky/topright.png");
+}
+
+.bottom__left {
+  background: url("../../../assets/starrySky/bottomleft.png");
+}
+
+.bottom__right {
+  background: url("../../../assets/starrySky/bottomright.png");
+}

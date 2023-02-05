@@ -16,14 +16,13 @@
 
     @include breakpoint(sm) {
         @media all and (-webkit-min-device-pixel-ratio:0) {
-          height: 170vh;
+          height: 280vh;
         }
         @media all and (-moz-min-device-pixel-ratio:0) {
           height: 250vh;
         }
         @-moz-document url-prefix(){
           height: 200vh;
-
         }
       }
 

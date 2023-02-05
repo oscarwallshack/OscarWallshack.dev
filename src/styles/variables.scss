@@ -83,7 +83,7 @@ a:hover {
     }
 
      @else if $point==vsm {
-        @media (max-width: 767px) {
+        @media (max-width: 360px) {
             @content;
         }
     }
