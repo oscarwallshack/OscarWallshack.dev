@@ -50,10 +50,6 @@
     z-index: -1000;
     overflow: hidden;
 
-    @include breakpoint(lg) {
-           
-    }
-
     @include breakpoint(md) {
       height: 180vh;
     

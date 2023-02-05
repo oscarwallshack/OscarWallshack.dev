@@ -15,6 +15,8 @@
         display: flex;
         margin-right: $spacing-lg;
 
+
+
         li {
             height: 100%;
 
@@ -48,6 +50,10 @@
         display: flex;
         flex-direction: column;
         margin-bottom: $spacing-lg;
+
+        @include breakpoint(sm) {
+            align-items: center;
+        }
 
         li {
             &:not(:last-child) {
