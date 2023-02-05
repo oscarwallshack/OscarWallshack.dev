@@ -43,14 +43,14 @@
         .menu {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             position: fixed;
             top: 0px;
             bottom: 0px;
             right: 0px;
-            padding: 3rem;
+            padding: 4rem;
             width: 30vw;
-            height: 50vh;
+            height: 100vh;
             outline: 0;
             z-index: 9;
             opacity: 0;

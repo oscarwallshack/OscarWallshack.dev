@@ -17,6 +17,7 @@
     @include breakpoint(sm) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center
     }
 
 
@@ -24,6 +25,10 @@
         margin: 50px 20px;
         height: 100%;
         z-index: 2;
+        @include breakpoint(sm) {
+        margin: 50px 0;
+            
+        }
     }
 
     &__intro {
@@ -86,26 +91,26 @@
 
     &__donut {
         position: absolute;
-        width: 450px;
+        width: 250px;
         animation: moveUpDown 4s ease-in-out infinite;
         z-index: 1;
         left: 340px;
         mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.95) 100%);
 
         @include breakpoint(lg) {
-            width: 400px;
-            left: 240px;
+            width: 230px;
+            left: 320px;
         }
 
         @include breakpoint(md) {
-            width: 350px;
-            left: 240px;
-            top: 10px;
+            width: 200px;
+            left: 300px;
+            top: 100px;
         }
 
         @include breakpoint(sm) {
-            width: 250px;
-            left: 240px;
+            width: 180px;
+            left: 180px;
             top: 100px;
         }
 

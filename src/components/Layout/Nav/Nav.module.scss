@@ -4,6 +4,7 @@
     display: flex;
     height: 100%;
     align-items: center;
+    padding: 10px;
 
     @include breakpoint(sm) {
         display: none;
@@ -40,6 +41,7 @@
     flex-direction: column;
     text-align: center;
     font-size: 1.1rem;
+    margin-top: 40px;
 
 
     ul {

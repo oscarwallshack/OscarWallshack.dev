@@ -4,10 +4,29 @@
     display: grid;
     justify-items: center;
     gap: 20px;
-    width: auto;
     padding: 150px 0;
     background: $primary;
     // background-image: linear-gradient(to bottom, #000 0%, $primary 100%);
+
+    >div {
+        width: 1000px;
+
+        @include breakpoint(lg) {
+        width: 800px;
+
+        }
+
+        @include breakpoint(md) {
+        width: 700px;
+
+        }
+
+        @include breakpoint(sm) {
+        width: 600px;
+
+        }
+    }
+
 
 
     &__aboutMe {
@@ -25,6 +44,8 @@
         .description {
             display: grid;
             grid-template-columns: 1fr 4fr;
+            align-items: center;
+            gap: 20px;
 
             .prof {
                 width: 10em;
@@ -39,6 +60,7 @@
                 font-size: 1.1em;
                 text-align: left;
                 color: $grey;
+                margin-bottom: 10px;
 
                 span {
                     color: $pink_2
@@ -84,6 +106,7 @@
 
             ul {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
             }
         }
