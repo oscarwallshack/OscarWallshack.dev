@@ -7,6 +7,21 @@
     padding: 150px 0;
     background: $primary;
     // background-image: linear-gradient(to bottom, #000 0%, $primary 100%);
+    // background-image: linear-gradient(to bottom, $primary 0%, #8d08013d 100%);
+
+
+    &__header {
+        margin: 100px 0 50px 0;
+        color: $white;
+        text-align: center;
+
+        h2 {
+            font-size: $headingH2;
+            letter-spacing: $letterSpacing;
+            margin-bottom: 0.2em;
+        }
+    }
+
 
     >div {
         width: 1000px;
@@ -36,12 +51,6 @@
         border-radius: $borderRadius;
         color: $white;
         padding: 30px;
-
-        h3 {
-            font-size: $headingH4;
-            letter-spacing: $letterSpacing;
-            margin-bottom: 20px;
-        }
 
         .description {
             display: grid;

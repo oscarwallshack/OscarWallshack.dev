@@ -44,8 +44,10 @@ const Introduce = () => {
 
   return (
     <section className={classes.introduce}>
+    <div className={classes.introduce__header}>
+          <h2>About me</h2>
+        </div>
       <div className={classes.introduce__aboutMe}>
-        <h3>About Me</h3>
         <div className={classes.description}>
           <div className={classes.prof}></div>
           <div>

@@ -6,7 +6,11 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <Logo />
-      <div>
+      <div className={classes.contact}>
+        <p>Feel free to text me</p>
+        <a href="bo.walczak@wp.pl">bo.walczak@wp.pl</a>
+      </div>
+      <div className={classes.social}>
         <a target="_blank" href="https://github.com/oscarwallshack">
           GitHub
         </a>
