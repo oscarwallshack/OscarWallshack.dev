@@ -57,7 +57,7 @@ const Introduce = () => {
             <p>
               After hours I learn programming to become a{" "}
               <span>Frontend Developer</span>. I want to create nice looking
-              websites and web applications.
+              websites and applications.
             </p>
           </div>
         </div>

@@ -109,9 +109,10 @@
         }
 
         @include breakpoint(sm) {
-            width: 180px;
-            left: 180px;
+            width: 150px;
+            left: auto;
             top: 100px;
+            opacity: 0.9;
         }
 
 

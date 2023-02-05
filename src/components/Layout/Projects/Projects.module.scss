@@ -4,18 +4,28 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    height: 110vh;
+    height: 120vh;
     width: 100%;
     padding: 150px 0;
     background-image: linear-gradient(to bottom, #000 0%, $primary 100%);
+    
 
     @include breakpoint(md) {
-        height: 130vh;
+        height: 150vh;
     }
 
     @include breakpoint(sm) {
-        height: 170vh;
-    }
+        @media all and (-webkit-min-device-pixel-ratio:0) {
+          height: 170vh;
+        }
+        @media all and (-moz-min-device-pixel-ratio:0) {
+          height: 250vh;
+        }
+        @-moz-document url-prefix(){
+          height: 200vh;
+
+        }
+      }
 
     &__header {
         margin: 100px 0 50px 0;
