@@ -4,7 +4,7 @@ import classes from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <footer className={classes.footer}>
+    <footer id="contact" className={classes.footer}>
       <Logo />
       <div className={classes.contact}>
         <p>Feel free to text me</p>

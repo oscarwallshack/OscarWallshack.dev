@@ -15,15 +15,18 @@
     }
 
     @include breakpoint(sm) {
-        @media all and (-webkit-min-device-pixel-ratio:0) {
-          height: 280vh;
-        }
-        @media all and (-moz-min-device-pixel-ratio:0) {
-          height: 250vh;
-        }
-        @-moz-document url-prefix(){
-          height: 200vh;
-        }
+        height: 230vh;
+        // margin-bottom: 200px;
+
+        // @media all and (-webkit-min-device-pixel-ratio:0) {
+        //   height: 280vh;
+        // }
+        // @media all and (-moz-min-device-pixel-ratio:0) {
+        //   height: 250vh;
+        // }
+        // @-moz-document url-prefix(){
+        //   height: 200vh;
+        // }
       }
 
     &__header {
