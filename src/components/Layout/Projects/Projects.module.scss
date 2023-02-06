@@ -11,11 +11,11 @@
     
 
     @include breakpoint(md) {
-        height: 150vh;
+        height: 80em;
     }
 
     @include breakpoint(sm) {
-        height: 230vh;
+        height: 100em;
         // margin-bottom: 200px;
 
         // @media all and (-webkit-min-device-pixel-ratio:0) {

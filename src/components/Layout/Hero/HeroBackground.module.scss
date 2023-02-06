@@ -62,11 +62,11 @@
   overflow: hidden;
 
   @include breakpoint(md) {
-    height: 180vh;
+    height: 170em;
   }
 
   @include breakpoint(sm) {
-    height: 200vh;
+    height: 180em;
   }
 }
 
