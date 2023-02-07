@@ -6,13 +6,7 @@ import donutImage from "../../../assets/donut.png";
 import HeroBackground from "./HeroBackground";
 import Slider from "./Slider/Slider";
 
-const Hero = () => {
-
-
-const contactModalHandler = () => {
-
-}
-
+const Hero = ({ onShowContactDetails }) => {
   return (
     <Fragment>
       <HeroBackground />
@@ -23,7 +17,7 @@ const contactModalHandler = () => {
           <h1>
             <span>Frontend</span> developer & <span>SEO</span> Specialist
           </h1>
-          <Button text="Contact me" onClick={contactModalHandler} />
+          <Button text="Contact me" onClick={onShowContactDetails} />
         </div>
         <div>
           <Slider />

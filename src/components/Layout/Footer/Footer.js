@@ -8,7 +8,7 @@ const Footer = () => {
       <Logo />
       <div className={classes.contact}>
         <p>Feel free to text me</p>
-        <a href="bo.walczak@wp.pl">bo.walczak@wp.pl</a>
+        <a href="mailto:bo.walczak@wp.pl">bo.walczak@wp.pl</a>
       </div>
       <div className={classes.social}>
         <a target="_blank" href="https://github.com/oscarwallshack">
