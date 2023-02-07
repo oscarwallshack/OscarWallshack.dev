@@ -1,10 +1,35 @@
-import React from 'react'
-import classes from './Modal.module.scss'
+import React from "react";
+import ReactDOM from "react-dom";
+import classes from "./Modal.module.scss";
 
-const Modal = () => {
+const Backdrop = (props) => {
+  return <div className={classes.backdrop} onClick={props.onClose} />;
+};
+
+const ModalOverlay = (props) => {
   return (
-    <div>Modal</div>
-  )
-}
+    <div className={classes.modal}>
+      <div className={classes.content}>{props.children}</div>
+    </div>
+  );
+};
 
-export default Modal
+const portalElement = document.getElementById("overlays");
+
+const Modal = (props) => {
+  return (
+    <Fragment>
+      {ReactDOM.createPortal(
+        <Backdrop onClose={props.onClose} />,
+        portalElement
+      )}
+
+      {ReactDOM.createPortal(
+        <ModalOverlay>{props.children}</ModalOverlay>,
+        portalElement
+      )}
+    </Fragment>
+  );
+};
+
+export default Modal;

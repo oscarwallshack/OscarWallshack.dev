@@ -7,6 +7,12 @@ import HeroBackground from "./HeroBackground";
 import Slider from "./Slider/Slider";
 
 const Hero = () => {
+
+
+const contactModalHandler = () => {
+
+}
+
   return (
     <Fragment>
       <HeroBackground />
@@ -17,7 +23,7 @@ const Hero = () => {
           <h1>
             <span>Frontend</span> developer & <span>SEO</span> Specialist
           </h1>
-          <Button text="Contact me" />
+          <Button text="Contact me" onClick={contactModalHandler} />
         </div>
         <div>
           <Slider />

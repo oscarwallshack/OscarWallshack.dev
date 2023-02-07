@@ -6,6 +6,7 @@ const Introduce = () => {
     "React.js",
     "Redux",
     "JavaScript",
+    "TypeScript",
     "Bootstrap 5",
     "Laravel 8",
     "PHP",
@@ -43,10 +44,10 @@ const Introduce = () => {
   const cmsList = cms.map((cms, index) => <li key={index}>{cms}</li>);
 
   return (
-    <section className={classes.introduce}>
-    <div className={classes.introduce__header}>
-          <h2>About me</h2>
-        </div>
+    <section id="about-me" className={classes.introduce}>
+      <div className={classes.introduce__header}>
+        <h2>About me</h2>
+      </div>
       <div className={classes.introduce__aboutMe}>
         <div className={classes.description}>
           <div className={classes.prof}></div>
