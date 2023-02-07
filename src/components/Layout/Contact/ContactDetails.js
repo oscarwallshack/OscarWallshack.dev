@@ -5,7 +5,7 @@ import classes from "./ContactDetails.module.scss";
 const ContactModal = ({onClose}) => {
   return (
     <Modal onClose={onClose}>
-      <h3>Contact!</h3>
+      <h4>Contact!</h4>
     </Modal>
   );
 };

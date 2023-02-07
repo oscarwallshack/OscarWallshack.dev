@@ -7,6 +7,9 @@ import HeroBackground from "./HeroBackground";
 import Slider from "./Slider/Slider";
 
 const Hero = ({ onShowContactDetails }) => {
+
+
+  
   return (
     <Fragment>
       <HeroBackground />
@@ -17,7 +20,7 @@ const Hero = ({ onShowContactDetails }) => {
           <h1>
             <span>Frontend</span> developer & <span>SEO</span> Specialist
           </h1>
-          <Button text="Contact me" onClick={onShowContactDetails} />
+          <a href="#contact"><Button text="Contact me"  /></a>
         </div>
         <div>
           <Slider />
