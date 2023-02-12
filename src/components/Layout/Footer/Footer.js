@@ -6,10 +6,7 @@ const Footer = () => {
   return (
     <footer id="contact" className={classes.footer}>
       <Logo />
-      <div className={classes.contact}>
-        <p>Feel free to text me</p>
-        <a href="mailto:bo.walczak@wp.pl">bo.walczak@wp.pl</a>
-      </div>
+      <div className={classes.contact}></div>
       <div className={classes.social}>
         <a target="_blank" href="https://github.com/oscarwallshack">
           GitHub
@@ -20,6 +17,7 @@ const Footer = () => {
         >
           LinkedIn
         </a>
+        <a href="mailto:bo.walczak@wp.pl">Mail</a>
       </div>
     </footer>
   );

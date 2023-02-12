@@ -8,20 +8,6 @@
     background: $primary;
     // background-image: linear-gradient(to bottom, #8d08013d 0%, $primary 100%);
 
-    .contact{
-        display: flex;
-        gap: 10px;
-        p{
-            color: $white;
-        }
-        a{
-            color: $pink_2;
-        }
-        a:hover{
-            color: $pink;
-        }
-    }
-
     .social {
         display: flex;
         gap: 2em;
@@ -35,6 +21,8 @@
             color: $white;
             letter-spacing: $letterSpacing;
             transition: 0.2s;
+            min-width: 6em;
+            text-align: center;
 
             &:hover {
                 background: #9e9e9e1e;
