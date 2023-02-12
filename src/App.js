@@ -7,7 +7,7 @@ import Projects from "./components/Layout/Projects/Projects";
 import ContactDetails from "./components/Layout/Contact/ContactDetails";
 
 function App() {
-  const [contactModalShown, setContactModalShown] = useState(true);
+  const [contactModalShown, setContactModalShown] = useState(false);
 
   const showContactModalShown = () => {
     setContactModalShown(true);
