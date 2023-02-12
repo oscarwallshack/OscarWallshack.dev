@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import classes from "./Modal.module.scss";
 import { CgClose } from "react-icons/cg";
 
+
 const Backdrop = (props) => {
   return <div className={classes.backdrop} onClick={props.onClose} />;
 };
