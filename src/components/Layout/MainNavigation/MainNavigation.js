@@ -1,6 +1,6 @@
-import classes from "./Nav.module.scss";
+import classes from "./MainNavigation.module.scss";
 
-const Nav = ({ isMenu, menuToggle }) => {
+const MainNavigation = ({ isMenu, menuToggle }) => {
   return (
     <nav className={isMenu ? classes.menu__nav : classes.nav}>
       <ul>
@@ -18,4 +18,4 @@ const Nav = ({ isMenu, menuToggle }) => {
   );
 };
 
-export default Nav;
+export default MainNavigation;

@@ -3,7 +3,7 @@ import Logo from "../../UI/Logo/Logo";
 
 import { CgMenuRight, CgClose } from "react-icons/cg";
 import classes from "./Header.module.scss";
-import Nav from "./Nav/Nav";
+import MainNavigation from "../MainNavigation/MainNavigation";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <Logo />
-      <Nav />
+      <MainNavigation />
       <div className={classes.header__menu}>
         <div className={classes.header__menu__toggle}>{menuToggle}</div>
         <aside className={`${classes.menu} ${menuOpen && classes.show}`}>
