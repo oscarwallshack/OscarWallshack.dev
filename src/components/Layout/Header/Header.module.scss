@@ -10,12 +10,11 @@
     width: 100%;
     z-index: 1000;
     transition: all 0.5s ease;
-    background-color: #000;
+    background: $primary;
 
     @include breakpoint(sm) {
         padding: 0 3rem;
         justify-content: space-between;
-
     }
 
     &__menu {

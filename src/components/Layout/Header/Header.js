@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../../UI/Logo/Logo";
+import { useLocation } from "react-router-dom";
 
 import { CgMenuRight, CgClose } from "react-icons/cg";
 import classes from "./Header.module.scss";
@@ -18,8 +19,11 @@ const Header = () => {
     <CgClose onClick={handleMenuToggle} />
   );
 
+  const location = useLocation();
+  let styles = location.pathname === "/" ? { background: "none" } : {};
+
   return (
-    <header className={classes.header}>
+    <header className={classes.header} style={styles}>
       <Logo />
       <MainNavigation />
       <div className={classes.header__menu}>

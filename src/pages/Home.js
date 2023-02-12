@@ -22,7 +22,6 @@ const HomePage = () => {
       )}
       <Hero onShowContactDetails={showContactModalShown} />
       <Projects />
-      <Footer />
     </Fragment>
   );
 };
