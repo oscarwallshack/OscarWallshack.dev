@@ -30,7 +30,7 @@ const Modal = (props) => {
       )}
 
       {ReactDOM.createPortal(
-        <ModalOverlay>{props.children}</ModalOverlay>,
+        <ModalOverlay onClose={props.onClose}>{props.children}</ModalOverlay>,
         portalElement
       )}
     </Fragment>
