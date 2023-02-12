@@ -1,50 +1,60 @@
 @import '/src/styles/variables.scss';
 
-
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 14px;
+  background-color: $white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 3000;
+  animation: slide-down 300ms ease-out forwards;
+
+  &__toggle {
+    position: relative;
+    display: flex;
+    color: #000000;
+    flex-direction: row-reverse;
     width: 100%;
-    height: 100vh;
-    z-index: 2000;
-    background-color: rgba(0, 0, 0, 0.75);
-  }
-  
-  .modal {
-    position: fixed;
-    top: 20vh;
-    left: 5%;
-    width: 90%;
-    background-color: $white;
-    padding: 1rem;
-    border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    z-index: 3000;
-    animation: slide-down 300ms ease-out forwards;
+    cursor: pointer;
 
-    &__toggle {
-        color: black;
-        position: relative;
-        cursor: pointer;
+    svg {
+      font-size: 1.5rem;
+    }
 
-        svg {
-            font-size: 1.5rem;
-        }
 
-       
-    }
   }
-  
-  
-  
-  @keyframes slide-down {
-    from {
-      opacity: 0;
-      transform: translateY(-3rem);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+}
+
+
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
   }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

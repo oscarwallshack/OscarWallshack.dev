@@ -1,15 +1,12 @@
 import React from "react";
 import { Fragment } from "react";
-import Button from "../../UI/Button";
+import Button from "../../UI/Button/Button";
 import classes from "./Hero.module.scss";
 import donutImage from "../../../assets/donut.png";
 import HeroBackground from "./HeroBackground";
 import Slider from "./Slider/Slider";
 
 const Hero = ({ onShowContactDetails }) => {
-
-
-  
   return (
     <Fragment>
       <HeroBackground />
@@ -20,7 +17,7 @@ const Hero = ({ onShowContactDetails }) => {
           <h1>
             <span>Frontend</span> developer & <span>SEO</span> Specialist
           </h1>
-          <a href="#contact"><Button text="Contact me"  /></a>
+          <Button text="Contact me" onClick={onShowContactDetails} />
         </div>
         <div>
           <Slider />
