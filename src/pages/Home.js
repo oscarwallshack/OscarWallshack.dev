@@ -4,6 +4,7 @@ import Header from "../components/Layout/Header/Header";
 import Hero from "../components/Layout/Hero/Hero";
 import Projects from "../components/Layout/Projects/Projects";
 import ContactDetails from "../components/Layout/Contact/ContactDetails";
+import Teaser from "../components/Layout/Introduce/Teaser";
 
 const HomePage = () => {
   const [contactModalShown, setContactModalShown] = useState(false);
@@ -22,6 +23,7 @@ const HomePage = () => {
       )}
       <Hero onShowContactDetails={showContactModalShown} />
       <Projects />
+      <Teaser />
     </Fragment>
   );
 };
