@@ -7,6 +7,10 @@ import HeroBackground from "./HeroBackground";
 import Slider from "./Slider/Slider";
 
 const Hero = ({ onShowContactDetails }) => {
+
+
+  
+
   return (
     <Fragment>
       <HeroBackground />

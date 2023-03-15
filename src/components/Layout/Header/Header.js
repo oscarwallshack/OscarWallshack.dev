@@ -9,6 +9,9 @@ import MainNavigation from "../MainNavigation/MainNavigation";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const body = document.querySelector("body");
+  body.style.overflow = menuOpen ? "hidden" : "auto";
+  
   const handleMenuToggle = () => {
     setMenuOpen((prev) => !prev);
   };
