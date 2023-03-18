@@ -16,7 +16,6 @@ const HomePage = () => {
   const hideContactModalHandler = () => {
     setContactModalShown(false);
   };
-  
   return (
     <Fragment>
       {contactModalShown && (

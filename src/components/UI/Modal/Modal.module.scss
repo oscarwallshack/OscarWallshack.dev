@@ -15,53 +15,6 @@
 }
 
 
-.ModalOpen {
-  animation: openModal 0.4s ease-out forwards;
-}
-
-.ModalClose {
-  animation: closeModal 1s ease-out forwards;
-}
-
-@keyframes openModal {
-  0% {
-    opacity: 1;
-    transform: translateY(-150%);
-
-  }
-
-  50% {
-    opacity: 1;
-    transform: translateY(10%);
-
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes closeModal {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-
-  }
-
-  50% {
-    opacity: 0.8;
-    transform: translateY(60%);
-
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(-200%);
-
-  }
-}
-
 .modal {
   position: fixed;
   top: 0;
@@ -78,8 +31,6 @@
   z-index: 3000;
   animation: slide-down 300ms ease-out forwards;
 
-
-
   &__toggle {
     position: relative;
     display: flex;
@@ -95,8 +46,6 @@
 
   }
 }
-
-
 
 @keyframes slide-down {
   from {
