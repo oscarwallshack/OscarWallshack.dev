@@ -50,15 +50,17 @@ const Introduce = () => {
           <div className={classes.prof}></div>
           <div>
             <p>
-              My name is Bartek and I am currently working as an{" "}
-              <span>SEO specialist</span>. I help clients achieve their business
-              goals by optimizing their websites for the Google search engine
-            </p>
-            <p>
-              After hours I learn programming to become a{" "}
-              <span>Frontend Developer</span>. I want to create nice looking
-              websites and applications.
-            </p>
+              My name is Bartek, and currently, I work as a{" "}
+              <span>Full Stack Developer.</span> My responsibilities include
+              maintaining and expanding an online store and developing a
+              configurator for photovoltaic installations. Previously, I worked
+              as an <span>SEO Specialist</span>, assisting clients in achieving their
+              business goals by optimizing their websites for the Google search
+              engine. 
+              </p>
+              <p>My professional goal is to code complete systems and web
+              applications.</p>
+          
           </div>
         </div>
       </div>
